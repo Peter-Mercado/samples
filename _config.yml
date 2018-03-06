@@ -1,1 +1,5 @@
 theme: jekyll-theme-cayman
+title: Peter's coding samples
+email: petermercadoitservices@gmail.com
+description: This site is devoted to code and programming samples by Peter Mercado
+baseurl: "/peter-mercado"
