@@ -44,14 +44,21 @@ img.center {
 
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
 <script>
 $(document).ready(function(){
     $("#hide").click(function(){
-        $("#imagetest").slideUp("slow");
+        $("img").slideUp("slow");
     });
     $("#show").click(function(){
         $("img").slideDown("slow");
     });
+});
+
+$( "#clickme" ).click(function() {
+  $( "#book" ).slideUp( "slow", function() {
+    // Animation complete.
+  });
 });
 
 
@@ -77,7 +84,7 @@ Hi
 
 	<div class="alignleft">
 <!--<img src="dragon_image_2.jpg" class="images">-->
-<img src="dragon_image_1.jpg" class="imagetest">
+<img id="book" src="dragon_image_1.jpg" class="images">
 
 </div>
 	
@@ -94,6 +101,8 @@ Hi
 		<p>I am so scared of this dragon that I need to hide him!</p><br>
 		<button id="hide">Hide the dragon</button>
 		<button id="show">Show the dragon</button>
+		<button id="clickme">Show the dragon 2</button>
+			
 	</div>
 	
 </body>
